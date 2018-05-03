@@ -1,12 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title></title>
+	<title> 310: Final</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-
 <body>
 
+<div class="youtubeGG">
+      <div class="youtubecontent">
+          <iframe id="ytplayer" type="text/html"
+      src="https://www.youtube.com/embed/dVkK36KOcqs?autoplay=1&controls=0&loop=1&modestbranding=1&showinfo=0&iv_load_policy=3&theme=light&playlist=mbo9eTOXlwA"
+      frameborder="0" allowfullscreen>
+          </iframe>
+      </div>
+	</div>
+
+	<div id="container">
+    <header>
+        <h1><span> YouTube </span> Search </h1> <br>
+        <p>YouTube is one of the largest search engines in the world. And writing descriptions with keywords can help viewers find your videos more easily through search. Search all YouTube Videos</p>
+    </header>
+    <section>
+        <form id="search-form" name="search-form" onsubmit="return search()">
+            <div class="fieldcontainer">
+                <input type="search" id="query" class="search-field" placeholder="Search Videos">
+                <input type="submit" name="search-btn" id="search-btn" value="">
+            </div>
+        </form>
+        
+        <ul id="results"></ul>
+        <div id="buttons"></div>
+    </section>
+    <footer> MMP 310: Syeda Ishrat, 2018 </footer>
+</div>
 
 </body>
-
 </html>
