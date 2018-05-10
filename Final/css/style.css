@@ -39,7 +39,72 @@
 		height: 100%;
 	}
 
-/* , body and search */
+
+/* random quote */
+
+
+.main {
+  margin-top: -290px;
+  margin-bottom: 40px;
+  padding: 30px 40px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background: rgba(18, 17, 17, 0.9);
+}
+
+.lightbulb {
+  margin-bottom: 15px;  
+}
+
+button {
+  font-family: 'Quicksand', sans-serif;
+  width: 250px;
+  display: inline-block;
+  font-size: 16px;
+  background: #61a3be;
+  padding: 12px 12px;
+  border: 2px solid #746e6e;
+  border-radius: 60px;
+  color: #ede4e4;
+  margin: 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #f54747;
+  color: #000000;
+  border: 2px solid #bfcdd7;
+  opacity: .8;
+}
+
+button:active {
+  background-color: #212121;
+}
+
+button:focus {
+  outline:0;
+}
+
+a {
+  text-decoration: none;
+  color: #413d3e;
+}
+
+a:hover {
+  color: #e5ddcc;
+  background-color: #413d3e;
+}
+
+a:active {
+  background-color: #212121;
+}
+
+img {
+    margin-top: 250px;
+}
+
+/* body and search */
 
 	body {
     font-family: 'Quicksand', sans-serif;
@@ -65,8 +130,7 @@ a:link:hover {
 }
 
 #container {
-    width: 740px;
-    background: #fff;
+    width: 850px;
     margin: auto;
 }
 
@@ -169,6 +233,7 @@ input {
 }
 
 .paging-button {
+    font-family: 'Quicksand', sans-serif;
     background: #61a3be;
     padding: 12px 12px;
     border: 2px solid #746e6e;
