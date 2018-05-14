@@ -44,7 +44,7 @@
 
 
 .main {
-  margin-top: -290px;
+  margin-top: -300px;
   margin-bottom: 40px;
   padding: 30px 40px;
   margin-left: auto;
@@ -100,9 +100,6 @@ a:active {
   background-color: #212121;
 }
 
-img {
-    margin-top: 250px;
-}
 
 /* body and search */
 
@@ -153,6 +150,27 @@ h1 {
 
 h1 span {
     color: rgba(255, 9, 6, 0.94);
+}
+
+h3 {
+  font-size: 38px;
+  color: #2ca2d5;
+  margin-bottom: -15px;
+}
+
+h3 span {
+    color: rgba(255, 9, 6, 0.94);
+}
+
+h4 {
+  font-size: 25px;
+  color: rgba(255, 9, 6, 0.94);
+  margin-bottom: -5px;
+}
+
+h5 {
+  font-size: 38px;
+    color: #2ca2d5;
 }
 
 section {
