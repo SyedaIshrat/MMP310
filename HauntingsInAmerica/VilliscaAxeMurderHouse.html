@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+	<head>
+		<meta charset='utf-8' />
+		<meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'/>
+		<title> Hauntings In America </title>
+		
+		<link rel="shortcut icon" href="favicon.ico" />
+		
+		<link rel="stylesheet" href="css/styles.css" type="text/css" media="screen" charset="utf-8" />
+	</head>
+	<body>
+
+		<nav class="social-nav">
+			<ul>
+				<li><a href="https://www.facebook.com/"><img src="images/icon-facebook.png" /></a></li>
+				<li><a href="https://www.twitter.com/"><img src="images/icon-twitter.png" /></a></li>
+				<li><a href="https://plus.google.com/"><img src="images/icon-google.png" /></a></li>
+				<li><a href="https://www.pinterest.com/"><img src="images/icon-pinterest.png" /></a></li>
+			</ul>
+		</nav>
+
+		<nav class="main-nav">
+			<ul>
+				<li><a href="index.html"> Home </a></li>
+				<li><a href="VilliscaAxeMurderHouse.html" class="active"> Villisca Axe Murder House </a></li>
+				<li><a href="myrtlesplantation.html"> Myrtles Plantation </a></li>
+				<li><a href="WaverlyHillsSanatorium.html"> Waverly Hills Sanatorium </a></li>
+			</ul>
+		</nav>
+
+		<a href="" id="arrow_left"><img src="images/arrow-left.png" alt="Slide Left" /></a>
+		<a href="" id="arrow_right"><img src="images/arrow-right.png" alt="Slide Right" /></a>
+
+		<section class="content show" id="Villisca Axe Murder House">
+			<h1> Villisca Axe Murder House </h1>
+			<h4> On June 10, 1912, the old white frame house at 508 E Second St became a grisly crime scene. The heinous murder of Josiah B. Moore, his wife, their 4 children and 2 young girls who were overnight guests rocked the small town of Villisca, IA, and the murderer was never identified. Over the years, residents of the home reported visions of a man with an ax, children crying and unexplained paranormal activity. In 1994, the home was restored to its original condition with no indoor plumbing or electricity. These touches add to the chilling ambience during a lamplight tour from April through November or an overnight experience available by reservation for groups. </p>
+			<a href="http://www.villiscaiowa.com/index.php"> For More Info &#187; </a> 
+			<p><a href="myrtlesplantation.html"> Next &#187;</a></p>
+		</section>
+
+
+	<div id="maximage">
+			<div>
+				<img src="images/backgrounds/bg-img-1.jpg" alt="" />
+				<img class="gradient" src="images/backgrounds/gradient.png" alt="" />
+			</div>
+			<div>
+				<img src="images/backgrounds/VilliscaAxeMurdersHouse1.jpg">
+				<img class="gradient" src="images/backgrounds/gradient.png" alt="" />
+			</div>
+			<div>
+				<img src="http://www.wallpaperup.com/uploads/wallpapers/2015/04/22/668975/cc9cbd187f78fefc9247474156408688.jpg">
+				<img class="gradient" src="images/backgrounds/gradient.png">
+			</div>
+			<div>
+				<img src="http://www.wallpaperup.com/uploads/wallpapers/2015/09/17/804852/3bbc144e5fe159ead0c41b1219938d5e.jpg">
+				<img class="gradient" src="images/backgrounds/gradient.png">
+			</div>
+			<div>
+				<img src="http://pre09.deviantart.net/8f2d/th/pre/i/2005/326/8/0/creepy_hallway_by_desideratidivivo.jpg">
+				<img class="gradient" src="images/backgrounds/gradient.png">
+			</div>
+			<div>
+				<img src="https://wonderfuloldthings.files.wordpress.com/2015/08/dscn3956.jpg">
+				<img class="gradient" src="images/backgrounds/gradient.png">
+			</div>
+			<div>
+				<img src="images/backgrounds/bg-img-5.jpg" alt="" />
+				<img class="gradient" src="images/backgrounds/gradient.png" alt="" />
+			</div>
+		</div>
+		
+		<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.js'></script>
+		<script src="js/jquery.easing.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.cycle.all.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.maximage.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.fullscreen.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.ba-hashchange.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/main.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" charset="utf-8">
+			$(function(){
+				$('#maximage').maximage({
+					cycleOptions: {
+						fx: 'fade',
+						speed: 1000,
+						timeout: 5000,
+						prev: '#arrow_left',
+						next: '#arrow_right',
+						pause: 0,
+						before: function(last,current){
+							if(!$.browser.msie){
+								if($(current).find('video').length > 0) $(current).find('video')[0].play();
+							}
+						},
+						after: function(last,current){
+							if(!$.browser.msie){
+								if($(last).find('video').length > 0) $(last).find('video')[0].pause();
+							}
+						}
+					},
+					onFirstImageLoaded: function(){
+						jQuery('#cycle-loader').hide();
+						jQuery('#maximage').fadeIn('fast');
+					}
+				});
+				jQuery('video,object').maximage('maxcover');
+	
+			});
+		</script>
+  </body>
+</html>
